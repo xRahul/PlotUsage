@@ -4,8 +4,10 @@ import in.rahulja.plotusage.enums.MemoryType;
 import in.rahulja.plotusage.interfaces.DataType;
 import in.rahulja.plotusage.pojos.Memory;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
+@ToString
 public class FreeMemory implements DataType {
 
   private Memory value;

@@ -2,9 +2,11 @@ package in.rahulja.plotusage.datatypes;
 
 import in.rahulja.plotusage.interfaces.DataType;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 
+@ToString
 public class Brightness implements DataType {
 
   private Integer value;

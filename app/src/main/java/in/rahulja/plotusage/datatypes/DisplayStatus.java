@@ -3,8 +3,10 @@ package in.rahulja.plotusage.datatypes;
 import in.rahulja.plotusage.enums.Status;
 import in.rahulja.plotusage.interfaces.DataType;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
+@ToString
 public class DisplayStatus implements DataType {
 
   private Status value;

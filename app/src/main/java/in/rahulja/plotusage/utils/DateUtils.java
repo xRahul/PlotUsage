@@ -12,7 +12,7 @@ import static in.rahulja.plotusage.constants.CommonConstants.DEFAULT_TIMEZONE;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class DateUtils {
 
-  public static int getFourDigitYear(@NonNull int year) {
+  public static int getFourDigitYear(int year) {
     ZonedDateTime now = ZonedDateTime.now(ZoneId.of(DEFAULT_TIMEZONE));
     int lastCentury = (now.getYear() - (now.getYear() % 100)) - 100;
     int currentCentury = now.getYear() - (now.getYear() % 100);

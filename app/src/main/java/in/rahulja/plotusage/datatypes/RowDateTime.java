@@ -9,11 +9,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
 import static in.rahulja.plotusage.constants.CommonConstants.COMMA;
 import static in.rahulja.plotusage.constants.CommonConstants.DEFAULT_TIMEZONE;
 
+@ToString
 public class RowDateTime implements DataType {
 
   private ZonedDateTime value;

@@ -1,22 +1,22 @@
 package in.rahulja.plotusage.datatypes;
 
+import in.rahulja.plotusage.enums.Status;
 import in.rahulja.plotusage.interfaces.DataType;
 import lombok.NonNull;
 import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.math.NumberUtils;
 
 @ToString
-public class CellSignal implements DataType {
+public class GpsStatus implements DataType {
 
-  private Integer value;
+  private Status value;
 
   @SuppressWarnings("RedundantIfStatement")
-  private static boolean validate(String cellSignalString) {
-    if (StringUtils.isBlank(cellSignalString)) {
+  private static boolean validate(String gpsStatusString) {
+    if (StringUtils.isBlank(gpsStatusString)) {
       return false;
     }
-    if (NumberUtils.isCreatable(cellSignalString.trim())) {
+    if (gpsStatusString.trim().equals("off") || gpsStatusString.trim().equals("on")) {
       return true;
     }
     return false;
@@ -32,7 +32,11 @@ public class CellSignal implements DataType {
 
   @Override public void setData(@NonNull String data) {
     if (isValid(data)) {
-      value = Integer.parseInt(data.trim());
+      if (data.trim().equals("off")) {
+        value = Status.OFF;
+      } else if (data.trim().equals("on")) {
+        value = Status.ON;
+      }
     }
   }
 }

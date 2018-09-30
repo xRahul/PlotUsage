@@ -2,8 +2,10 @@ package in.rahulja.plotusage.datatypes;
 
 import in.rahulja.plotusage.interfaces.DataType;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
+@ToString
 public class CpuFrequency implements DataType {
 
   private Integer value;

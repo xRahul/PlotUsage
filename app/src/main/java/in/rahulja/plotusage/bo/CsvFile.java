@@ -10,7 +10,6 @@ import lombok.Value;
 @Value
 @Builder
 public class CsvFile {
-  private String path;
   private String fileNameRegex;
 
   public FileRow parseRow(@NonNull String fileName, @NonNull String rowString) {

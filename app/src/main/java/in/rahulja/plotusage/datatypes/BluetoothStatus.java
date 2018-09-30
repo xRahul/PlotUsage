@@ -4,9 +4,11 @@ import in.rahulja.plotusage.enums.Status;
 import in.rahulja.plotusage.interfaces.DataType;
 import java.util.Collections;
 import lombok.NonNull;
+import lombok.ToString;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
+@ToString
 public class BluetoothStatus implements DataType {
 
   private Status value;
