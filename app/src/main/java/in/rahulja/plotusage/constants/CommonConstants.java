@@ -12,4 +12,5 @@ public class CommonConstants {
   public static final String CALL_FILE_NAME_REGEX = "^Call_.*\\.csv$";
   public static final String DISPLAY_FILE_NAME_REGEX = "^Display_.*\\.csv$";
   public static final String LOCATION_FILE_NAME_REGEX = "^Location_.*\\.csv$";
+  public static final String TASKER_DATA_DIRECTORY_NAME = "TaskerData";
 }

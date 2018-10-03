@@ -12,6 +12,14 @@
 
 ![High Level Diagram](images/High Level Diagram.png)
 
+#### Graphs (Per Day, Per Week, Per Month)
+* Battery
+  - Total Battery Charged time
+  - Time Points when Battery was full
+  - Total minutes when Battery stayed Full
+  - Time Points when Battery was < 5%
+  - Total minutes when Battery was < 5%
+
 ### Low Level Design
 
 #### Entities
